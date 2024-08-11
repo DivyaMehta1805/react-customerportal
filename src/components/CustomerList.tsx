@@ -118,12 +118,6 @@ const CustomerList: React.FC<CustomerListProps> = ({ onSelectCustomer }) => {
           {!hasMore && <div>No more customers to load</div>}
         </div>
       </div>
-      <button 
-        className={`scroll-to-top ${showScrollTopRef.current ? 'visible' : ''}`} 
-        onClick={scrollToTop}
-      >
-        Top
-      </button>
     </div>
   );
 };
